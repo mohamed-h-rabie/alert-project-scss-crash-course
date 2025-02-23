@@ -2,15 +2,15 @@ import { X } from "lucide-react";
 import "./index.scss";
 import React from "react";
 interface Iprops {
-  className: string;
+  type: "warning" | "error" | "success" | "note" | "info";
   icon: React.ReactNode;
   title: string;
   describtion: string;
 }
 
-const Alert = ({ className, icon, title, describtion }: Iprops) => {
+const Alert = ({ type, icon, title, describtion }: Iprops) => {
   return (
-    <div className={className}>
+    <div className={type}>
       <div className="alert-header">
         <div className="alert-title">
           {icon}
