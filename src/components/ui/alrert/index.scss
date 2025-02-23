@@ -1,0 +1,38 @@
+$border-color: rgba(255, 25, 0, 0.322);
+$error-color: rgba(239, 141, 141, 0.9803921569);
+$error-bg: rgba(192, 29, 29, 0.15);
+
+.alert-box {
+  border: 2px dotted $border-color;
+  padding: 1.3rem;
+  color: $error-color;
+  background-color: $error-bg;
+  border-radius: 0.8rem;
+  text-transform: capitalize;
+  // max-width: 750px;
+
+  .alert-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .alert-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+
+      svg {
+        margin-right: 0.6rem;
+      }
+    }
+    .close {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 1.2rem;
+  }
+}
